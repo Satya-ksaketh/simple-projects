@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator</title>
+</head>
+
+<body class="min-h-screen max-w-full flex justify-center grid  place-content-center bg-[#2C343C]">
+    <div class="p-15 shadow-md border-2 border-solid border-gray-500 rounded-2xl">
+        <div >
+            <input  id="inputBox"  placeholder="0"  class="p-5 bg-transparent m-2.5 text-white text-4xl cursor-pointer text-right w-[360px] rounded-none m-10" disabled>
+        </div>
+        <div class=" m-2.5 text-white text-base font-semibold cursor-pointer ">
+            <div>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2 text-yellow-300 bg-[#1e1919] font-bold">AC</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2 text-yellow-300 bg-[#1e1919] font-bold">DEL</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2 text-yellow-300 bg-[#1e1919] font-bold">%</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2 text-yellow-300 bg-[#1e1919] font-bold">/</button>
+            </div>
+            <div>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">7</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">8</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">9</button>
+                <button type="button" class="m-2.5 border-none p-2 w-16 h-16 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2 text-yellow-300 bg-[#1e1919] font-bold">*</button>
+            </div>
+            <div>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">4</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">5</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">6</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2 text-yellow-300 bg-[#1e1919] font-bold">+</button>
+            </div>
+            <div>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">1</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">2</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">3</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2 text-yellow-300 bg-[#1e1919] font-bold">-</button>
+            </div>
+            <div>
+                <button type="button" id="plusMinus" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">&#xB1;</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">0</button>
+                <button type="button" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full bg-transparent outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2">.</button>
+                <button type="button" id="eqBtn" class=" border-none p-2 w-16 h-16 m-2.5 shadow-gray-950 shadow-2xl rounded-full  outline-offset-4 active:bg-black transition-transform transform active:translate-x-2 active:translate-y-2 text-yellow-300 font-extrabold bg-orange-700">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

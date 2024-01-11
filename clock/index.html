@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Analog clock</title>
+</head>
+
+<body class="font-sans ">
+    <div class="w-[500px] h-[500px] border-8 m-auto relative rounded-full border-cyan-700 border-solid mt-20">
+        <div class="w-[20px] h-[20px] absolute bg-[#283149] rounded-full top-[240px] left-[240px] "></div>
+        <div class="text-3xl font-bold">
+            <div class="absolute top-[40px] right-[130px]">1</div>
+            <div class="absolute top-[125px] right-[45px] ">2</div>
+            <div class="absolute top-[235px] right-[10px]">3</div>
+            <div class="absolute top-[345px] right-[45px]">4</div>
+            <div class="absolute top-[415px] right-[120px]">5</div>
+            <div class="absolute bottom-[10px] left-[240px]">6</div>
+            <div class="absolute top-[420px] left-[130px]">7</div>
+            <div class="absolute top-[345px] left-[45px]">8</div>
+            <div class="absolute top-[228px] left-[10px]">9</div>
+            <div class="absolute top-[125px] left-[38px]">10</div>
+            <div class="absolute top-[40px] left-[125px]">11</div>
+            <div class="absolute top-[10px] left-[235px]">12</div>
+            <div class="text-lg font-bold text-cyan-700 absolute top-[80px] left-[218px] ">AJANTA</div>
+            
+            <div class="w-[400px] h-[400px]  absolute top-[50px] left-[50px] rounded-full" id="minute-hand">
+                <div class="relative ">
+                    <div class="w-[4px] h-[200px] bg-[#404b69] absolute left-[198px]"></div>
+                    <div class="text-3xl font-bold text-[#404b69] absolute left-[190px] top-[-7px] rotate-180">V</div>
+                </div>
+            </div>
+
+            <div class="w-[300px] h-[300px]  absolute top-[100px] left-[100px] rounded-full" id="hour-hand">
+                <div class="relative ">
+                    <div class="w-[4px] h-[150px] bg-[#404b69] absolute left-[148px]"></div>
+                    <div class="text-3xl font-bold text-[#404b69] absolute left-[140px] top-[-7px] rotate-180">V</div>
+                </div>
+            </div>
+
+            <div class="w-[350px] h-[350px]  absolute top-[75px] left-[75px] rounded-full" id="second-hand">
+                <div class="relative ">
+                    <div class="w-[2px] h-[175px] bg-[#404b69] absolute left-[174px]"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
